@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Tetris II</title>
+	
+	<!-- meta tags -->
+	<meta name="Abstract" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="rating" content="general" />
+	<meta name="robots" content="all" />
+	<meta name="mssmarttagspreventparsing" content="true" />
+	<meta name="ICBM" content="xx.xxxxxx,xx.xxxxxx" />
+	<!-- /meta tags -->
+
+	<!-- links -->
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- /links -->
+
+	
+	<link rel="stylesheet" href="assets/site/css/estrutura.css" type="text/css" media="screen" />
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/site/css/ie7.css" type="text/css" media="screen" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" href="assets/site/css/ie8.css" type="text/css" media="screen" />
+	<![endif]-->
+	<!--[if IE 9]>
+		<link rel="stylesheet" href="assets/site/css/ie9.css" type="text/css" media="screen" />
+	<![endif]-->
+	
+	<!-- Biblioteca JavaScript -->
+	<script type="text/javascript" src="assets/site/scripts/lib/jquery.js"></script>
+  <script type="text/javascript" src="assets/site/scripts/app/jplayer/jplayer.js"></script>
+
+	<!-- Plugins JavaScript -->
+
+	<!-- JavaScript padrão do site -->
+  <script type="text/javascript" src="assets/site/scripts/sistema.js"></script>
+	<script type="text/javascript" src="assets/site/scripts/default.js"></script>
+
+</head>
+<body>
+
+	<!-- #wrapper -->
+  <div id="wrapper">
+  
+  	<!-- #header -->
+    <div id="header">
+      <audio class="music" src="assets/site/sounds/tetris.mp3"></audio>
+      <audio class="point" src="assets/site/sounds/boom.mp3"></audio>
+    </div>
+    <!-- fecha #header -->
+    
+    <!-- #content -->
+    <div id="content">
+        
+      <div class="limbo">
+        <div class="box">
+          <p>N49</p>
+          <ul class="fat">
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+          </ul>
+        </div>
+        <div class="controles">
+          <a href="javascript:void(0)" title="Esquerda" class="esquerda">&lArr;</a>
+          <a href="javascript:void(0)" title="Direita" class="direita">&rArr;</a>
+          <a href="javascript:void(0)" title="Descer" class="descer">&dArr;</a>
+          <a href="javascript:void(0)" title="Girar" class="girar">Girar</a>
+        </div>
+      </div>
+      <p class="versao"> Versão: 1.3.1</p>
+      <ol class="side">
+        <li class="info pontos">
+          <span>Pontos:</span>
+          <p>0</p>
+        </li>
+        <li class="info nivel">
+          <span>Nível:</span>
+          <p>1</p>
+        </li>
+        <li class="info next">
+          <span>Próxima:</span>
+          <ul>
+            <li class="on"></li><li class="on"></li><li class="on"></li><li></li>
+            <li></li><li class="on"></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li>
+          </ul>
+        </li>
+      </ol>
+      <ol class="botoes">
+        <li class="in-game">
+          <p class="start botao">Começar!</p>
+        </li>
+      </ol>
+    </div>
+    <!-- fecha #content -->
+  
+  	<!-- #footer -->
+    <div id="footer">
+    </div>
+    <!-- fecha #footer -->
+    
+  </div>
+  <!-- fecha #wrapper -->
+  
+</body>
+</html>

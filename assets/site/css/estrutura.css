@@ -1,0 +1,149 @@
+/* --- Cascading Style Sheet ---
+	
+	Versao: 0.0
+	 Autor: Christian Guilherme Fritsch
+	E-mail: guilherme@n49.com.br / guilherme@opiniaoearte.com.br
+	
+	   Data de criacao: xx/xx/xxxx
+	Ultima atualizacao: xx/xx/xxxx
+	
+*/
+
+/* --- HTML Reset ---
+
+	Versao: 0.1
+	Descricao:	Trecho de CSS que elimina estilos básicos das principais tags de html
+	Autor: Christian Guilherme Fritsch			
+	E-mail: guilherme@nucleo49.com.br / guilherme@opiniaoearte.com.br / guilherme@nodivclear.net.br
+	
+	   Data de criacao: 18/11/2011
+	Ultima atualizacao: 18/11/2011
+
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+  vertical-align: baseline;
+  background: transparent
+}
+ol, ul { list-style: none}
+blockquote, q { quotes: none }
+hr { display:none }
+textarea {
+    resize:none;
+    overflow:auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;}
+blockquote, q { quotes: none; }
+
+/* @Classes auxiliares ==============================================================*/
+
+.bold {font-weight:bold;}
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.uppercase { text-transform: uppercase; }
+.underline { text-decoration: underline;}
+
+.block { display: block; }
+.left { float: left; }
+.right { float: right; }
+.no-float { float: none; }
+.clear { clear: both;}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;}
+.clearfix { display: inline-block; }
+/* Hide from IE Mac \*/
+.clearfix { display: block; }
+/* End hide from IE Mac */
+
+.none { display: none; }
+
+/* @Font-face =======================================================================*/
+
+/* @Estilos gerais ==================================================================*/
+
+	a:link, a:visited {}
+	a:hover, a:active {}
+	
+	h1 {}
+	h2 {}
+	
+	strong {}
+	em {}
+	abbr {}
+	
+/* @Estrutura ======================================================================*/
+
+	#wrapper { margin: 0 auto; width: 600px;}
+	#content { margin: 0 auto; padding: 30px 0 0 0; width: 600px;}
+	#footer {}
+
+/* @Wrapper ========================================================================*/
+
+
+
+/* @Header =========================================================================*/
+
+#header audio {opacity: 0; -moz-opacity:0;}
+
+/* @Content ========================================================================*/
+
+#content .limbo { border-radius: 9px; box-shadow: 10px 11px 10px -12px #333; float: left; height: 470px; padding: 25px 0 0 0; position: relative; width: 500px; }
+
+#content .box { border: 2px solid #ccc; display: block; height: 400px; position: relative; margin: 0 auto; width: 202px;}
+#content .box.crazy {border: none;}
+#content .box ul { position: relative; left: 0; top: 0; z-index: 1;}
+#content .box ul li { border: 1px solid #fff;float: left; height: 18px; width: 18px;}
+#content .box ul { float: left; width: 200px;}
+#content .box ul li.on {background-color: #ff3800;}
+#content .box ul li.set {background-color: #0035fa;}
+#content .box ul li.set.off,
+#content .box ul li.on.off{background-color: #999;}
+#content .box p { filter:alpha(opacity=20); font: bold 78px Tahoma, Helvetica, sans-serif; left: 20px; -moz-opacity: 0.2; opacity: 0.2; position: absolute; text-transform: uppercase; top: 40px; z-index: 0;}
+#content .box p:first-letter {color: #0035fa;}
+
+#content .versao {color: #c0c0c0; float: left; margin: 20px 0 0 0; height: 14px; font: 10px/14px Arial, Helvetica, sans-serif; text-align: center; width: 100px;}
+#content .side { float: left; margin: 0;}
+#content .side .info {border-radius: 0 0 9px 0; box-shadow: 10px 11px 10px -12px #333; clear: left; float: left; height: 60px; margin: 0 0 4px 0; width: 100px;}
+#content .side .info span{ color: #000; float: right; font: bold 12px/14px Helvetica, Tahoma, sans-serif; margin: 20px 0 0 0; text-transform: uppercase; width: 80px;}
+#content .side .info p{ float: right; font: bold 14px/16px Tahoma, Helvatica, sans-serif; text-align: right; padding: 0 5px 0 0; width: 75px;}
+
+#content .side .next {height: 122px;}
+#content .side .info ul { float: left; margin: 8px 0 0 20px; width: 80px;}
+#content .side .info li { float: left; height: 20px; width: 20px;}
+#content .side .info li.on { background-color: #f38000; border: 1px solid #fff; height: 18px; width: 18px;}
+#content .side .info li:last-child { width: 19px}
+
+#content .botoes { float: left; margin: 20px 0 0 0; width: 100px;}
+#content .botoes li { border-radius: 0 0 9px 0; box-shadow: 10px 11px 10px -12px #333; clear: both; float: left; height: 50px; width: 100px;}
+#content .botoes p { border-radius: 9px 0 9px 0; cursor: pointer; float: left; font: bold 11px/30px Arial, Helvetica, sans-serif; height: 30px; margin: 20px 0 0 17px; text-align: center; text-transform: uppercase; width: 83px;}
+
+#content .botoes li.in-game p.start { background-color: #339900; color: #fff;}
+#content .botoes li.in-game p.pause { background-color: #993300; color: #fff;}
+#content .botoes li.in-game p.paused { background-color: #f38000; color: #fff;}
+
+#content .controles { bottom: -120px; height: 108px; padding: 0 0 20px 0; position: absolute; left: 13px; width: 500px;}
+#content .controles a { color: #fff; display: block; font: 12px/60px Arial, Helvetica, sans-serif; position: absolute; right: 0; text-align: center; text-decoration: none; top: 0;}
+#content .controles .esquerda { background-color: #390;  left: 80px;  height: 60px; top: 25px; width: 80px;}
+#content .controles .direita { background-color: #390;  left: 170px; line-height: 80px;  height: 80px; top: 100px; width: 60px;}
+#content .controles .descer { background-color: #d00;  left: 90px;  height: 60px; top: 105px; width: 60px;}
+#content .controles .girar {  background-color: #cb0; line-height: 80px;  right: 80px;  height: 80px; top: 35px; width: 80px;}
+/* @Footer =========================================================================*/
+/* @Modal ==========================================================================*/
+
