@@ -115,7 +115,7 @@ blockquote, q { quotes: none; }
 #content .box ul li.set {background-color: #0035fa;}
 #content .box ul li.set.off,
 #content .box ul li.on.off{background-color: #999;}
-#content .box p { filter:alpha(opacity=20); font: bold 78px Tahoma, Helvetica, sans-serif; left: 20px; -moz-opacity: 0.2; opacity: 0.2; position: absolute; text-transform: uppercase; top: 40px; z-index: 0;}
+#content .box p { filter:alpha(opacity=20); font: bold 54px Tahoma, Helvetica, sans-serif; left: 20px; -moz-opacity: 0.2; opacity: 0.2; position: absolute; top: 40px; z-index: 0;}
 #content .box p:first-letter {color: #0035fa;}
 
 #content .versao {color: #c0c0c0; float: left; margin: 20px 0 0 0; height: 14px; font: 10px/14px Arial, Helvetica, sans-serif; text-align: center; width: 100px;}
